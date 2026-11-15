@@ -1,0 +1,13 @@
+{
+  "qa_answerability": 0.7,
+  "qa_margin": 1.0,
+  "qa_agreement": 0.65,
+  "semantic_equivalence": 0.88,
+  "ensemble_entailment": 0.65,
+  "each_entailment": 0.4,
+  "conflict_consensus": 0.8,
+  "embedding_relevance": 0.1,
+  "extra_original_conflict": 0.7,
+  "max_evidence": 6,
+  "max_answer_words": 65
+}

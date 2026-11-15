@@ -1,0 +1,179 @@
+{
+  "timestamp_utc": "2026-11-15T16:43:39.345622+00:00",
+  "packages": {
+    "curatorkit": {
+      "version": "0.1.28",
+      "direct_url": null
+    },
+    "auditkit": {
+      "version": "1.1.12",
+      "direct_url": null
+    }
+  },
+  "real_sdk_contracts_passed": true,
+  "curation": {
+    "status": "executed",
+    "sdk": "curatorkit",
+    "operation": "Curator(CuratorConfig(dedup=exact, clean=False)).run",
+    "input_count": 3,
+    "output_count": 2,
+    "kept_ids": [
+      "S2",
+      "S3"
+    ],
+    "duplicate_sources": [
+      {
+        "source_id": "S1",
+        "duplicate_of": "S2"
+      }
+    ],
+    "stage_counts": {
+      "JSONLReader": {
+        "output_count": 3,
+        "rejected_count": 0
+      },
+      "SchemaGate": {
+        "input_count": 3,
+        "output_count": 3,
+        "probe_recovered": 0,
+        "rejected_count": 0
+      },
+      "ExactDeduplicator": {
+        "input_count": 3,
+        "output_count": 2
+      },
+      "AlpacaExporter": {
+        "exported_count": 2
+      }
+    },
+    "artifact_sha256": {
+      "dataset_card.md": "e570b0146e34edff95b52e08462849a9ba55183b7333eb7259d571ed54857c9f",
+      "README.md": "dead238417119d1cd6ae138b43b22c4f545f0f759f33fd2b9fbca841b4a1ecb4",
+      "manifest.json": "23764af5e0ba03ce7c8583758ccbcfde02163426f7ce66581a6763c24d41d1b8",
+      "lexsi_provenance.json": "4aeaf8798f960d8641acc78108c45be9d64e0142474d24c5ca7d74f3cb3e886f",
+      "sft_alpaca.jsonl": "9291772f4b59334286e3254ad62a8b8a574126d90bcb51ba74f6e723ad80c7d3",
+      "rejected.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checksums.txt": "29184dc589bbeaff1e1143945934cf15e11827215ab9486f6f6a7aae39bc8962"
+    },
+    "provenance_documents": {
+      "manifest.json": {
+        "pipeline_config_hash": "6dca1ea9be0e89b8",
+        "run_timestamp": "2026-11-15T16:43:39.240043Z",
+        "source_files": [],
+        "stage_counts": {
+          "JSONLReader": {
+            "output_count": 3,
+            "rejected_count": 0
+          },
+          "SchemaGate": {
+            "input_count": 3,
+            "output_count": 3,
+            "probe_recovered": 0,
+            "rejected_count": 0
+          },
+          "ExactDeduplicator": {
+            "input_count": 3,
+            "output_count": 2
+          },
+          "AlpacaExporter": {
+            "exported_count": 2
+          }
+        },
+        "rejected_breakdown": {},
+        "dedup_stats": {
+          "exact_duplicates_removed": 1
+        },
+        "minhash_threshold": null,
+        "sampler_stats": null,
+        "token_stats": {
+          "total_prompt_tokens": 0,
+          "total_completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "wall_clock_seconds": 0.015,
+        "tool_versions": {
+          "curatorkit": "0.1.28",
+          "python": "3.12.16"
+        },
+        "diversity_stats": null,
+        "diagnostic_stats": null,
+        "diagnostic_files": [],
+        "provenance": {
+          "schema": "lexsi.provenance/1",
+          "library": "curatorkit",
+          "version": "0.1.28",
+          "git_sha": null,
+          "created_at": "2026-11-15T16:43:39Z",
+          "base_model": null,
+          "method": "curate",
+          "inputs": [
+            {
+              "kind": "dataset",
+              "ref": "/tmp/kit_curate_rylk8375/passages.jsonl",
+              "config": null,
+              "provenance": null
+            }
+          ],
+          "params": {
+            "generator_model": null,
+            "judge_model": null,
+            "grpo_scoring_model": null,
+            "export_formats": [
+              "alpaca"
+            ],
+            "output_split": null,
+            "output_split_group": null,
+            "output_split_near_dup_threshold": 0.8,
+            "pipeline_config_hash": "6dca1ea9be0e89b8"
+          }
+        }
+      },
+      "lexsi_provenance.json": {
+        "schema": "lexsi.provenance/1",
+        "library": "curatorkit",
+        "version": "0.1.28",
+        "git_sha": null,
+        "created_at": "2026-11-15T16:43:39Z",
+        "base_model": null,
+        "method": "curate",
+        "inputs": [
+          {
+            "kind": "dataset",
+            "ref": "/tmp/kit_curate_rylk8375/passages.jsonl",
+            "config": null,
+            "provenance": null
+          }
+        ],
+        "params": {
+          "generator_model": null,
+          "judge_model": null,
+          "grpo_scoring_model": null,
+          "export_formats": [
+            "alpaca"
+          ],
+          "output_split": null,
+          "output_split_group": null,
+          "output_split_near_dup_threshold": 0.8,
+          "pipeline_config_hash": "6dca1ea9be0e89b8"
+        }
+      }
+    },
+    "input_sha256": "4b7fd523b062be064cc553e0ab121cf65630ea6e0556101968ce97b44c4562fb",
+    "output_sha256": "bb5ea48aeee876f6bc520bd1eaa1e4eb37df20ab79797dca37b20094f1e5f7c5",
+    "seconds": 0.03338182717561722,
+    "note": "Only identical passage copies are removed. Distinct contradictory passages are retained; no source truth or independence is inferred."
+  },
+  "audit": {
+    "status": "executed",
+    "sdk": "auditkit",
+    "headline": {
+      "evidence_index": 0.75,
+      "source_eligible": 1.0
+    },
+    "fingerprint": "75443b26a1b5faca",
+    "trace_sha256": "39f311c0685030db952990f47459cde9b060da00652ddfbb7804f79dce8cf75c",
+    "seconds": 0.0007978407666087151,
+    "note": "Custom scorers execute deterministic checks over model outputs; not an independent truth judge or extra NLP model."
+  },
+  "note": "Fixture SDK contract test, NOT factual benchmark performance or live model validation."
+}

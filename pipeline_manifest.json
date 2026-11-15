@@ -1,0 +1,54 @@
+{
+  "python": "3.12.16",
+  "source_hashes": {
+    "tag_rag_v3.py": "7814e023ffcd77497d2f9ad4ae291d65f053d31272d60175d1c19ccd9279d3d4",
+    "generic_verifier.py": "ff1a0fae72c7fcc4f349d22fb7b1908fc519972bdeb1ef8399a9b29d7511a082",
+    "simple_source_workflow.py": "b43fe792eded7617cb495071a247debd571f2b59f9fe55ace9c0dc12f5ef4dd6",
+    "generic_config.json": "889b8520327003b7b88a15bb27544b115c43b971895e6d3ab13e2a7a21153fb6"
+  },
+  "artifact_hashes": {
+    "probe.joblib": "de3841c8716be2367c3648f2df5f90063668ec5631b955655c0d5685a5b2b6f4",
+    "TRAINING_COMPLETE.json": "2550cb9e1ed72922691494a992105fa978eef8354eec47353c10f81a2ad41294"
+  },
+  "requirements_sha256": "b741a0166b7595967cee14fe5114ef116282f6e644efcb2cf53f8ddb53b1b2b9",
+  "kit_training_provenance": {
+    "curatorkit": "0.1.28",
+    "auditkit": "1.1.12"
+  },
+  "release_hashes": {
+    "generic_verifier.py": "ff1a0fae72c7fcc4f349d22fb7b1908fc519972bdeb1ef8399a9b29d7511a082",
+    "benchmark.py": "df8d6e693214d6d0b8030385c074778161c7884e4ba4ef7e436e58d466341f70",
+    "train_probe_v3.py": "54182a8fed983e2e8daf0fdbbe6420d68959b8849a624d67965ed5bb9f3d9a32",
+    "prepare_repo.py": "6d8482a6d710e69dd98e144896c243e7823ed31d4c2aa61b096eb77f974207f0",
+    "app.py": "6ca2e5f2ee993c27d092c14f9635bd032c9bc461d15c090a15b755615820e44a",
+    "tag_rag_v3.py": "7814e023ffcd77497d2f9ad4ae291d65f053d31272d60175d1c19ccd9279d3d4",
+    "simple_source_workflow.py": "b43fe792eded7617cb495071a247debd571f2b59f9fe55ace9c0dc12f5ef4dd6",
+    "metrics.py": "b9d5b3cf2bd33522b63aff460cacf571e414eb2b0f9e59df27c281ab37f03c17",
+    "fetch_triviaqa.py": "f8df5d80b70bf2fc84b3e43db413be32c35657daf9bfbb670068e996102848d4",
+    "runtime.py": "dd2272af65d5825d663a1d00ed9d0f8ddedb9df7c0c23cb1ee5ff1fa4c76c09a",
+    "audit_benchmark.py": "db4c3e4ca1d5290818c1b77befb6fa5016f7a508ac1fd963059924b7aeeab5ee",
+    "kit_adapters.py": "1312109983df92bbc21bda6e85e5027a107bcbcbe029d1cac13a218e34f74da1",
+    "kit_workflow.py": "f852a5fb3da4454618f473273826d09d54bca7f3955677f2a7e25cc482e9bd2d",
+    "kit_preflight.py": "4e1914d4b62df04ca84a0de5aadd47d97775f82e6b1f389a91ffb32058a5d136",
+    "kits.lock.json": "744cef3d885f1c704c659f92216690437a0613c3781f8bdce07b3fce8e348873"
+  },
+  "note": "Exact working source assembled locally. No benchmark accuracy claimed by assembly.",
+  "reviewed_changes": [
+    {
+      "timestamp_utc": "20261115T164340003573Z",
+      "reason": "Mandatory CuratorKIT curation + AuditKIT scoring/release",
+      "added": [
+        "kit_adapters.py",
+        "kit_workflow.py",
+        "kit_preflight.py",
+        "kits.lock.json"
+      ],
+      "modified": [
+        "tag_rag_v3.py",
+        "runtime.py",
+        "requirements.lock.txt"
+      ],
+      "backup": "before_two_kits_20261115T164340003573Z"
+    }
+  ]
+}
